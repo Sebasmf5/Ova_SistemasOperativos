@@ -9,10 +9,18 @@ extern "C" {
 #endif
 /*
  * Class:     libProceso_JavaProceso
- * Method:    algoritmo_SJF
+ * Method:    algoritmo_SJF_no_expulsivo
  * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_libProceso_JavaProceso_algoritmo_1SJF
+JNIEXPORT jstring JNICALL Java_libProceso_JavaProceso_algoritmo_1SJF_1no_1expulsivo
+  (JNIEnv *, jobject, jstring);
+
+/*
+ * Class:     libProceso_JavaProceso
+ * Method:    algoritmo_SJF_expulsivo
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_libProceso_JavaProceso_algoritmo_1SJF_1expulsivo
   (JNIEnv *, jobject, jstring);
 
 #ifdef __cplusplus

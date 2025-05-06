@@ -8,7 +8,7 @@ public class Aplicacion{
     JavaProceso proceso_SJF = null;
 
     static{
-      System.loadLibrary("Proceso");
+      System.loadLibrary("sjf");
     }
 
     public Aplicacion(){
@@ -24,7 +24,8 @@ public class Aplicacion{
                 + "  ]"
                 + "}";
 
-      System.out.println("El json es:" + proceso_SJF.algoritmo_SJF(json));
+      System.out.println("Algoritmo primero el trabajo mas corto no expulsivo:" + proceso_SJF.algoritmo_SJF_no_expulsivo(json));
+      System.out.println("Algoritmo primero el trabajo mas corto expulsivo:" + proceso_SJF.algoritmo_SJF_expulsivo(json));
 
     }
    public static void main (String[] args){
